@@ -21,29 +21,34 @@ import bTreePrinter from '@nebula/binary-tree-printer';
 // const bTreePrinter = require('@nebula/binary-tree-printer');
 
 console.log(
-  bTreePrinter({
-    value: 1,
-    left: null,
-    right: {
-      value: 2,
-      left: {
-        value: 3,
-        left: null,
-        right: null,
-      },
+  bTreePrinter(
+    {
+      value: 1,
+      left: null,
       right: {
-        value: 4,
-        left: null,
-        right: null,
+        value: 2,
+        left: {
+          value: 3,
+          left: null,
+          right: null,
+        },
+        right: {
+          value: 4,
+          left: null,
+          right: null,
+        },
       },
     },
-  }),
+    {
+      minLength: 5,
+      marks: {
+        dash: '-',
+        lb: '^',
+        joint: '^',
+      },
+    },
+  ),
 );
-//          1
-//          ┗━━━━━┓
-//                2
-//             ┏━━┻━━┓
-//             3     4
 console.log(
   bTreePrinter({
     value: 1,
@@ -107,14 +112,9 @@ console.log(
     },
   }),
 );
-//                      1
-//          ┏━━━━━━━━━━━┻━━━━━━━━━━━┓
-//          2                       3
-//    ┏━━━━━┻━━━━━┓           ┏━━━━━┻━━━━━┓
-//    4           5           6           7
-// ┏━━┻━━┓     ┏━━┻━━┓     ┏━━┻━━┓     ┏━━┻━━┓
-// 8     9    10    11    12    13    14    15
 ```
+
+![result](./public/result.png)
 
 ### CDN
 
@@ -175,9 +175,3 @@ console.log(
 ## License
 
 [The MIT License(MIT)](https://github.com/Moriarty47/binary-tree-printer/blob/main/LICENSE)
-
-<style>
-  .highlight pre span.pl-c {
-    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
-  }
-</style>

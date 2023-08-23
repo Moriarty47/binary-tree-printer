@@ -161,7 +161,6 @@ function createMarksArr(
         maxNumberLength
       );
     });
-    console.log(lvNodes);
     nodesArr[level] = lvNodes;
   });
 }
