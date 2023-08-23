@@ -1,6 +1,6 @@
 {
   "name": "@n3bula/binary-tree-printer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript library for printing a binary tree",
   "main": "./lib/bundle.js",
   "scripts": {
