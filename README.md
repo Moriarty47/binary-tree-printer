@@ -2,7 +2,19 @@
 
 ### A tool used for printing a binary tree structure in a visualizing way.
 
-## ESModule / CommonJS
+## Install
+
+```sh
+npm install @n3bula/binary-tree-printer
+# or
+yarn add @n3bula/binary-tree-printer
+# or
+pnpm add @n3bula/binary-tree-printer
+```
+
+## Use
+
+### ESModule / CommonJS
 
 ```js
 import bTreePrinter from '@nebula/binary-tree-printer';
@@ -104,7 +116,7 @@ console.log(
 // 8     9    10    11    12    13    14    15
 ```
 
-## CDN
+### CDN
 
 ```html
 <body>
@@ -163,3 +175,9 @@ console.log(
 ## License
 
 [The MIT License(MIT)](https://github.com/Moriarty47/binary-tree-printer/blob/main/LICENSE)
+
+<style>
+  .highlight pre span.pl-c {
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+  }
+</style>
