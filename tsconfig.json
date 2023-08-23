@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "declaration": true,
+    "declarationMap": false,
+    "declarationDir": "lib",
+    "rootDir": "src",
+    "outDir": "lib",  
+  },  
+}

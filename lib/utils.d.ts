@@ -1,0 +1,30 @@
+export declare const EMPTY_CHAR = " ";
+export declare const HASH_CHAR = "#";
+export declare const NULL_CHAR = "NULL";
+type ThingType = 'String' | 'Number' | 'Array' | 'Object' | 'Null' | 'Undefined';
+export declare const isType: (thing: unknown, type: ThingType) => boolean;
+export declare const isNumber: (thing: unknown) => thing is number;
+export declare const isString: (thing: unknown) => thing is string;
+export declare const isArray: (thing: unknown) => thing is any[];
+export declare const isObject: (thing: unknown) => thing is {};
+export declare const isVoid: (thing: unknown) => thing is null | undefined;
+export declare function isAllSameChar(str: string, char: string): boolean;
+export declare function getCharLength(str: string): number;
+export declare function is32Bit(char: string, i: number): boolean;
+export declare function getCodePointLength(str: string): number;
+export declare function padStart(str: string, length: number, char: string): string;
+export declare function padEnd(str: string, length: number, char: string): string;
+export declare function padStartEnd(str: string, length: number, char1?: string | undefined, char2?: string | undefined): string;
+export declare function emptyPadStart(length: number, str?: string | undefined, pad?: string | undefined): string;
+export type TreeNode = {
+    val?: number | string;
+    left: TreeNode;
+    right: TreeNode;
+} & {
+    value?: number | string;
+    left: TreeNode;
+    right: TreeNode;
+};
+export declare function getTreeDepth(tree: TreeNode): number;
+export declare function levelOrderTraversal(tree: TreeNode): [string[][], number, number, number];
+export {};
